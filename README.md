@@ -12,7 +12,7 @@ battery_usage = 2.7     # % per second
 speed = 1.5             # m/s
 ```
 
-Constants Initialization:
+### Constants Initialisation:
 battery_start: The initial battery level, starting at 100%.
 battery_usage: The rate of battery consumption in percentage per second (2.7% per second).
 speed: The speed of the rover is set to 1.5 meters per second.
@@ -23,7 +23,7 @@ angle_in_degrees = (angle_in_radians * (math.pi / 180))
 time = float(input("Enter time of travel in seconds: "))  # time must be a positive number
 ```
 
-Input & Conversion:
+### Input & Conversion:
 The user is asked to input an angle in degrees between 0 and 90, which is converted from degrees to radians for trigonometric calculations.
 The user is prompted to input the time the rover travels, measured in seconds.
 
@@ -36,7 +36,7 @@ battery_used = (time * battery_usage)
 battery_remaining = (battery_start - battery_used)
 ```
 
-Calculations:
+### Calculations:
 overall_distance_travelled: The total distance moved in meters.
 horizontal_distance: The horizontal displacement (x-axis) using the sine of the angle.
 vertical_distance: The vertical displacement (y-axis) using the cosine of the angle.
@@ -54,7 +54,7 @@ print("Battery used over travel:", battery_used)
 print("Battery left after travel:", battery_remaining)
 ```
 
-Output:
+### Output:
 Prints calculated values including angle, time, distance traveled, horizontal and vertical distances, battery used, and remaining battery.
 
 ```python
@@ -65,7 +65,7 @@ else:
     print("Robot can reach destination due to enough battery.")
 ```
 
-Battery Status Check:
+### Battery Status Check:
 Checks if the remaining battery is below 0%. If so, the rover cannot reach its destination.
 
 ```python
@@ -76,6 +76,6 @@ else:
 ```
     
 
-Return Path Check:
+### Return Path Check:
 Checks if the horizontal distance is zero. If so, the rover cannot return along the same path; otherwise, it can return.
 
