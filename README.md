@@ -79,3 +79,16 @@ else:
 ### Return Path Check:
 Checks if the horizontal distance is zero. If so, the rover cannot return along the same path; otherwise, it can return.
 
+```python
+# Checking if the robot can achieve its destination
+if battery_remaining < 0:
+    print("Robot cannot reach destination due to inadequate battery.")
+else:
+    print("Robot can reach destination due to enough battery.")
+
+    # Checking if the horizontal distance is zero
+    if horizontal_distance == 0:
+        print("Robot will not be able to return along the same path.")
+    else:
+        print(f"Robot will be able to return along the same path, covering a distance of {horizontal_distance} meters.")
+```
